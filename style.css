@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&family=Quicksand:wght@400;700&display=swap');
+
 body {
   margin: 0;
-  font-family: Georgia, serif;
-  background-color: #fdfdfd;
-  color: #333;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff0fb;
+  color: #4d004d;
 }
 
 #wrapper {
@@ -16,43 +18,65 @@ body {
   margin: 0 auto;
   gap: 20px;
   padding: 20px;
+  border-radius: 20px;
 }
 
 header {
   grid-area: header;
-  background-color: #eee;
-  padding: 20px;
-  border-bottom: 2px solid #ccc;
+  background: linear-gradient(90deg, #ffb6e6, #ffd6f8);
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+  border: 3px double #ff69b4;
+  box-shadow: 0 0 15px #ffb6e6;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2em;
+  font-family: 'Cherry Swash', cursive;
+  font-size: 2.8em;
+  color: #d60087;
+  text-shadow: 1px 1px white;
 }
 
 header nav ul {
   list-style: none;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  gap: 20px;
 }
 
 header nav a {
-  text-decoration: none;
-  color: #d50000;
+  color: #d60087;
   font-weight: bold;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #ffe3f9;
+  box-shadow: 0 0 5px #ffb6e6;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  background-color: #ffc1ec;
+  box-shadow: 0 0 10px #ff69b4;
 }
 
 aside {
   grid-area: sidebar;
-  background-color: #f4f4f4;
-  padding: 15px;
-  border: 1px solid #ddd;
+  background-color: #ffe4f7;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px dotted #ff69b4;
+  font-family: 'Cherry Swash', cursive;
 }
 
 aside h2 {
   margin-top: 0;
+  font-size: 1.5em;
+  color: #c71585;
 }
 
 aside ul {
@@ -60,33 +84,55 @@ aside ul {
   padding-left: 0;
 }
 
+aside li {
+  margin: 10px 0;
+}
+
 aside a {
-  color: #333;
   text-decoration: none;
+  color: #b3006d;
+  background: #ffd8f0;
+  padding: 5px 10px;
+  border-radius: 12px;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+aside a:hover {
+  background-color: #ffaad4;
+  color: #fff;
 }
 
 main {
   grid-area: main;
-  padding: 10px;
+  padding: 20px;
+  background-color: #fff0fb;
+  border-radius: 20px;
 }
 
 main h2 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
+  font-size: 2em;
+  font-family: 'Cherry Swash', cursive;
+  color: #d60087;
 }
 
 section.work {
-  background: #fff8f8;
-  padding: 15px;
-  border: 1px solid #ddd;
-  margin-top: 20px;
+  background: #ffeef9;
+  padding: 20px;
+  border-left: 6px solid #ff69b4;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #ffc1ec;
+  margin-top: 30px;
 }
 
 footer {
   grid-area: footer;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   font-size: 0.9em;
-  color: #777;
-  border-top: 1px solid #ccc;
+  color: #a64d79;
+  background-color: #ffd6f8;
+  border-top: 2px dashed #ff69b4;
+  border-radius: 20px;
+  margin-top: 20px;
 }

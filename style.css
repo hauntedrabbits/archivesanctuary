@@ -64,6 +64,18 @@ header nav a:hover {
   box-shadow: 0 0 10px #ff69b4;
 }
 
+.tagline {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #ff4da6;
+  background: linear-gradient(to right, #ffe3f9, #ffffff);
+  border-radius: 15px;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: 0 0 10px #ffb6e6;
+}
+
 aside {
   grid-area: sidebar;
   background-color: #ffe4f7;
